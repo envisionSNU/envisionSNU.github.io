@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+@font-face {
+    font-family: joker;
+    src: url(/fonts/Jokerman-Regular.ttf);
+}
+@font-face {
+    font-family: regular;
+    src: url(/fonts/SF-Regular.ttf);
+}
+@font-face {
+    font-family: semibold;
+    src: url(/fonts/SF-Semibold.ttf);
+}
+::-webkit-scrollbar{
+    width:12px
+}
+
+::-webkit-scrollbar-track{
+    display: none;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #363636;;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: regular;
+    background: #181818;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none; 
+}
+
+.main img {
+    width: 38%;
+    min-width: 420px;
+    padding-right: 5px;
+}
+
+
+.info .btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 1em;
+    color: white;
+    background: #4D0045;
+    margin-right: 15px;     
+}
+.info .btn:hover {
+    background:#4D0045;
+    transition: .5s ease;
+}
+.info .gay {
+    padding: 15px 33px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    margin:24px 0;
+}
+.events {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-bottom: 130px;
+}
+.events div {   
+    padding-bottom: 15px;   
+}
+.container .head{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+.background{
+    background-color: #181818;
+    text-align: center;
+    
+    margin:140px 0;
+    margin-bottom: 40px;
+    
+    width:95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.underline{
+    background-color: #4D0045;
+    width: 120px;
+    height:3px;
+    margin-bottom: 40px;
+}
+.ah {
+    border: 2px solid #4D0045;
+    border-radius: 2px;
+    padding-left: 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.ah p {
+    padding-bottom: 10px;
+}
+.ah img{
+    align-content: center;
+}
+.events h3 {
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+.events p {
+    font-size: 15px;
+}
+.links {
+    padding-top: 20px;  
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-align: center;  
+}
+.links img {
+    object-fit: cover;
+}
+.links a {
+    padding-right: 20px;
+    color: #4D0045;
+}
+.links a i {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.links a:hover {
+    color:#4D0045;
+    transition: .5s ease;
+}
+.link p {
+    color: #181818;
+}
+.links h4{
+    color: white;
+    font-size: 20px;
+}
+.ah h2{
+    color: white;
+    font-family: joker;
+    font-size: 30px;
+    text-align: center;
+}
+.ah h4{
+    color: white;
+    font-family: joker;
+    font-size: 30px;
+    text-align: center;
+}
+.links h5{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.vid {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.vid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+footer {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+footer p {
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: rgb(131, 131, 131);
+}
+
+footer i {
+    margin: 0 7px;
+    font-size: 40px;
+    color: rgb(131, 131, 131);
+}
+
+.ujj {
+    padding-bottom: 15px;
+}
+@media only screen and (max-width: 1200px) {
+    .container{
+        width:75vw;
+        margin: 50px 0;
+    }
+    .background{
+        width: 75vw;
+    }
+    .events {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+        margin-bottom: 85px;
+    }
+    .main img {
+        width: 450px;
+    }
+    .main{
+        margin-bottom: 50px;
+        flex-direction: column;
+    }
+    .info p{
+        width:80%;
+    }
+    .info .btn{
+        padding: 15px 20px;
+    }
+    .info .gay{
+        padding: 15px 33px;
+    }
+    .ah h2{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .container{
+        width:85%;
+    }
+    .background{
+        width: 85%;
+    }
+    .info p{
+        width:100%
+    }
+    .events {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main img{
+        min-width: 0;
+        width:90%;
+        margin-top:40px
+    }
+    .ah p {
+        font-size: 0.9em;
+    }
+}

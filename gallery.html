@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envision SNU</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/index-team.css">
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" >
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <style type="text/css">   @import url("css/background.css"); </style>
+    <nav>
+        <span id = "navLogo" onclick="window.location = '#'"><img src="images/logo-text.png"></span>
+        <ul class = "navLinks">
+            <li id = "cross"></li>
+            <li><a href = "index.html">Home</a></li>      
+            <li><a href = "events.html">Events</a></li>
+            <li><a href = "gallery.html">Gallery</a></li> 
+            <li><a href = "collaborations.html">Collaborations</a></li>
+            <li><a href = "faqs.html">FAQs</a></li>
+            <li><a href = "contact.html">Contact</a></li>
+        </ul>
+        <div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <body>
+    <div class = "container">
+        <div class = background><br>
+            <section class="events" id = "events">  
+            <span class = "head"><center>GALLERY</center></span>  
+            <div class="ah">
+                <br>
+                <h2><center>Marketing & Sponsorship</center></h2>
+                <div class="links">
+                        <br>
+                        <h5 style="font-size: 20px;"><center>Through this course we eye on focusing strategies that are unique and enable you 
+                            to market your ideas which in turn helps you design interactive minds. We aim to acquaint students with the concepts, 
+                            strategies, analysis and encounter all about Sponsorship and Marketing with a focus to understand it’s basic principles 
+                            and getting to know the art of serving the best to audience, developing networks and shaping thoughts to market-oriented 
+                            strategic planning and processing. We aim to provide you an insight into it’s diverse forms and experience the best.</center></h5>
+                        <div class="links">
+                            <a href="marketing.html">Team Members<i class="fas fa-chevron-right"></i></a>
+                            
+                        </div>
+                </div>
+            </div>
+            <div class="ah">
+                <br>
+                <h2><center>Videography</center></h2>
+                <div class="links">
+                        <br>
+                        <h5 style="font-size: 20px;"><center>For all the inquisitive minds who wonder what goes behind sealing images in a video which is 
+                            edited to perfection, the Video Editing course enables you to build principles of Adobe Premiere Pro from the scratch. Emphasis 
+                            is laid on building strong foundation about the software and having hands on experience about all it’s detailed features. The course
+                            objective is designed to execute basic fundamentals of Video Editing and what all goes behind the process.</center></h5>
+                        <div class="links">
+                            <a href="videography.html">Team Members<i class="fas fa-chevron-right"></i></a>
+                            
+                        </div>
+                </div>
+            </div>
+            <div class="ah">
+                <br>
+                <h2><center>Design</center></h2>
+                <div class="links">
+                        <br>
+                        <h5 style="font-size: 20px;"><center>Get to know Designing as a visible language that persuades mass audience today to convey 
+                        our notions through an effective and winsome form. Tour of Photoshop enabling you to familiarize with the software and through 
+                        the course journey getting into it’s grooves by exploring the unexplored features and taking concrete step towards seamless composite 
+                        photograph. Our aim is to envision new directions to design, build fundamentals and enable you to see real world with different perspective.</center></h5>
+                        <div class="links">
+                            <a href="design.html">Team Members<i class="fas fa-chevron-right"></i></a>
+                            
+                        </div>
+                </div>
+            </div>
+            <div class="ah">
+                <br>
+                <h2><center>Content Writing</center></h2>
+                <div class="links">
+                        <br>
+                        <h5 style="font-size: 20px;"><center>The aim of the course is to reflect your thoughts into well written descriptive words that targets the 
+                            emotions of the audience and lays a strong impact on their heart. The course journey will enable you to introduce your minds to different 
+                            forms and styles of writing which are relevant for blogging, websites, taping your tale and fond memories in form of stories, tricks to editing 
+                            content, writing enticing descriptions and much beyond this. An exposure to world where reel meets real, introducing you to broader narratives and 
+                            developing core connection with reader.</center></h5>
+                        <div class="links">
+                            <a href="content.html">Team Members<i class="fas fa-chevron-right"></i></a>
+                            
+                        </div>
+                </div>
+            </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>Made with &lt;3 by Envision.</p>
+        <a href="https://www.youtube.com/channel/UCCOwfx5EXmJD1zNnRx1ixkw" target = "_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/envision.snu/" target = "_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/envision-snu" target = "_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:envision@snu.edu.in" target = "_blank"><i class="fa fa-envelope"></i></a>
+    </footer>
+    <script>
+        const burger = document.getElementById("hamburger");
+        const cross = document.getElementById("cross");
+        const nav = document.querySelector(".navLinks");
+        const navLinks = document.querySelectorAll(".navLinks li a");
+        burger.addEventListener("click",() => {
+            nav.classList.add("nav-active");
+            navLinks.forEach(function(link,index){
+                link.style.opacity = 0;
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index/12+0.1}s`;
+            });
+        });
+        cross.addEventListener("click",() => {
+            nav.classList.remove("nav-active");
+            navLinks.forEach(function(link,index){
+                link.style.animation = "";
+                link.style.opacity = 1;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envision SNU</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/index-webinar.css">
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" >
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <style type="text/css">   @import url("css/background.css"); </style>
+    <nav>
+        <span id = "navLogo" onclick="window.location = '#'"><img src="images/logo-text.png"></span>
+        <ul class = "navLinks">
+            <li id = "cross"></li>
+            <li><a href = "teams.html">Teams</a></li>      
+            <li><a href = "events.html">Events</a></li>
+            <li><a href = "collaborations.html">Collaborations</a></li>
+            <li><a href = "faqs.html">FAQs</a></li>
+            <li><a href = "contact.html">Contact</a></li>
+        </ul>
+        <div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <body>
+    <div class = "container">
+        <div class = background><br>
+            <section class="events" id = "events">  
+            <span class = "head"><center>WEBINARS</center></span>  
+            <div class="ah">
+                <br>
+                <h2><center>The Art of “Meet” With Shawrya Mehrotra</center></h2>
+                <div class="links">
+                        <br>
+                        <h5 style="font-size: 20px;"><center>We honour the presence of Shawrya Mehrotra, the founder of Metvy who aims to build India’s first multilingual AI super connector that aims to connect people 1:1 according to their networking needs. He has conducted over 30 workshops in various colleges including IIT Delhi, Shri Ram college of Commerce, Hansraj, Shaheed Sukhdev College of Business Studies, Kirori Mal College. He will be sharing his journey, work experience, how to tackle problems in the field of marketing with all the keen and inquisitive learners.</center></h5>
+                        <div class="links">
+                        <a href="marketing.html"><i class="fas fa-chevron-right">About The Speaker</i></a> 
+                            
+                        </div>
+                </div>
+            </div> 
+            <div class="ah">
+                <br>
+                <h2><center>"WHEN ART MEETS ACTIVISM" BY Dr ARSHIYA SETHI</center></h2>
+                <div class="links">
+                        <br>
+                        <h5 style="font-size: 20px;"><center>Envision is all set to organize it’s first webinar which will honor the presence of Arshiya Sethi, an amalgam of rarest qualities. An epitome of strength, confidence and skill, she works for the betterment of society constantly engaging in activities such as woman empowerment, artistic training, management, activism, sessions on peer pressure, and much beyond this that makes the essence of her lectures special.
+                            <br> <br>
+                            She has deep experience in subjects that hold significant importance in today’s fast paced world. We are truly delighted to have her with us on 30th October, 8-9PM to share valuable inputs of her journey and help us nurture the seedlings of our career forward. Join us to put a halt to your unlimited queries of how professional work life looks like, writing content that attracts mass audiences and much more. We hope to see you with us for counting an experience to cherish lifelong!</center></h5>
+                        <div class="links">
+                        <a href="marketing.html"><i class="fas fa-chevron-right">About The Speaker</i></a> 
+                            
+                        </div>
+                </div>
+            </div> 
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>Made with &lt;3 by Envision.</p>
+        <a href="https://www.youtube.com/channel/UCCOwfx5EXmJD1zNnRx1ixkw" target = "_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/envision.snu/" target = "_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/envision-snu" target = "_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:envision@snu.edu.in" target = "_blank"><i class="fa fa-envelope"></i></a>
+    </footer>
+    <script>
+        const burger = document.getElementById("hamburger");
+        const cross = document.getElementById("cross");
+        const nav = document.querySelector(".navLinks");
+        const navLinks = document.querySelectorAll(".navLinks li a");
+        burger.addEventListener("click",() => {
+            nav.classList.add("nav-active");
+            navLinks.forEach(function(link,index){
+                link.style.opacity = 0;
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index/12+0.1}s`;
+            });
+        });
+        cross.addEventListener("click",() => {
+            nav.classList.remove("nav-active");
+            navLinks.forEach(function(link,index){
+                link.style.animation = "";
+                link.style.opacity = 1;
+            });
+        });
+    </script>
+</body>
+</html>
