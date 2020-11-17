@@ -108,7 +108,7 @@ a {
     margin-bottom: 130px;
 }
 .events div {   
-    padding-bottom: 15px;   
+    padding: 15px;   
 }
 .events1 {
     display: grid;
@@ -119,7 +119,7 @@ a {
     margin-bottom: 130px;
 }
 .events1 div {   
-    padding-bottom: 15px;   
+    padding: 15px;   
 }
 .container .head{
     font-family: 'Josefin Sans', sans-serif;
