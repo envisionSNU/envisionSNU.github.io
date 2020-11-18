@@ -76,9 +76,29 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
+@media only screen and (max-width: 800px) {
+  .slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    color: black;
+    display: flex;
+  }
+}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
   .centered{font-size: 11px;}
+  .slideshow-container {
+    max-width: 300px;
+    position: relative;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    color: black;
+    display: flex;
+  }
 }
 

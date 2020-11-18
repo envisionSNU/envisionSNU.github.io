@@ -110,6 +110,7 @@ a {
 .events div {   
     padding: 15px;   
 }
+
 .container .head{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 40px;
@@ -192,8 +193,8 @@ a {
 }
 .ah h4{
     color: white;
-    font-family: joker;
-    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
     text-align: center;
 }
 .links h5{
